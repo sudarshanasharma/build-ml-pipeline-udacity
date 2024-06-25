@@ -1,0 +1,11 @@
+name: download_file
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip=23.3.1
+  - requests=2.24.0
+  - pip:
+      - mlflow==2.8.1
+      - wandb==0.16.0
+      - git+https://github.com/udacity/nd0821-c2-build-model-workflow-starter.git#egg=wandb-utils&subdirectory=components
